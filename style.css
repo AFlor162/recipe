@@ -185,22 +185,31 @@ grid-template-rows: 1fr 4fr 4fr 4fr 4fr;
 background-color: #7abfbf;
 }
 
-
-#sides img {
-    width:100px;
-    height:100px;
-    padding: 5px;
-}
-
 #sides h2 {
     padding-left:25%;
     margin:5px;
     font-weight: bold;
 }
 
+#sides section {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+}
 
+#sides img {
+    width:100px;
+    height:100px;
+    margin: 10px;
+    grid-column-start: 1;
+    grid-column-end: 1;
+}
 
-
+#sides h3 {
+    grid-column-start:2;
+    grid-column-end:2;
+    margin-bottom:5px;
+}
 
 
 
