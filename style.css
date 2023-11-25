@@ -175,16 +175,29 @@ main img:first-of-type {
     margin: 5px;
 }
 
+#sides h2 {
+    margin:0;
+}
+
 #sides {
 display: grid;
-grid-template-rows: 1fr 1fr 1fr 1fr;
+grid-template-rows: 1fr 4fr 4fr 4fr 4fr;
 background-color: #7abfbf;
 }
+
 
 #sides img {
     width:100px;
     height:100px;
+    padding: 5px;
 }
+
+#sides h2 {
+    padding-left:25%;
+    margin:5px;
+    font-weight: bold;
+}
+
 
 
 
