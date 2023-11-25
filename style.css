@@ -159,6 +159,32 @@ main img:first-of-type {
     margin: 10px;
 }
 
+#directions h2 {
+    padding-left:37%;
+    margin:5px;
+    font-weight: bold;
+}
+
+#directions ol {
+    list-style: decimal;
+    padding-left: 15px;
+    margin: 10px;
+}
+
+#directions li {
+    margin: 5px;
+}
+
+#sides {
+display: grid;
+grid-template-rows: 1fr 1fr 1fr 1fr;
+background-color: #7abfbf;
+}
+
+#sides img {
+    width:100px;
+    height:100px;
+}
 
 
 
