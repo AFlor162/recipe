@@ -81,79 +81,29 @@ header,main,footer,nav {
 
 
 
-/*menu*/
-nav {
-    overflow: hidden;
-    max-height: 0;
-    transition: max-height .2s ease-out;
-}
-label {
-    cursor: pointer;
-    display: inline-block;
-    padding: 28px 20px;
-    position: relative;
-    user-select: none;
-}
-label span {
-    background-color: #ffffff;
-    display: block;
-    height: 2px;
-    position: relative;
-    transition: background-color .2s ease-out;
-    width: 18px;
-}
-label span:before, label span:after {
-    background: #ffffff;
-    content: '';
-    display: block;
-    height: 100%;
-    position: absolute;
-    transition: all .2s ease-out;
-    width: 100%;
-}
-label span:before {
-    top: 5px;
-}
-label span:after {
-    top: -5px;
-}
-input {
-    display: none;
-}
-input:checked ~ ul {
-    max-height: 500px;
-}
-input:checked ~ label span {
-    background: transparent;
-}
-input:checked ~ label span:before {
-    transform: rotate(-45deg);
-}
-input:checked ~ label span:after {
-    transform: rotate(45deg);
-}
-input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps) span:after {
-    top: 0;
-}
-
-
 nav ul {
     overflow: visible;
     position: absolute;
     top: 0;
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-}
-label span, input {
-    display: none;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
-/*menu end*/
+
+nav ul li:first-of-type {
+    position:absolute;
+    left: 150%;
+    background-color:#eb5428;
+    width:200px;
+}
+nav ul li:last-of-type {
+    position:absolute;
+    left:445%;
+}
 
 
 nav li {
     list-style: none;
-    float:left;
 }
 
 
@@ -165,6 +115,23 @@ header h1 {
     padding-left:100px;
     font-size: 40px;
     padding-top: 200px;
+}
+
+#search {
+    position:absolute;
+    top: 145px;
+    left: 34%;
+    border: 2px solid #eb5428;
+}
+
+#search input {
+    border-style: none;
+    padding: 10px;
+    width: 175px;
+}
+
+#search button {
+    border-style:none;
 }
 
 menu {
