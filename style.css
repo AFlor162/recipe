@@ -71,34 +71,25 @@ dt {
     font-weight:bold;
 }
 
+
 @media screen and (max-width:836px) {
 
 header,main,footer,nav {
     background-color: #f2f2f2;
-    width: 414px;
+    width:414px;
     margin:auto;
 }
 
 
-
-nav ul {
-    overflow: visible;
-    position: absolute;
-    top: 0;
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-}
-
-
-nav ul li:first-of-type {
-    position:absolute;
-    left: 150%;
-    background-color:#eb5428;
-    width:200px;
-}
-nav ul li:last-of-type {
-    position:absolute;
-    left:445%;
+nav {
+    display:block;
+    background-color: #f2f2f2;
+    position:fixed;
+    top:0;
+    left:18.1%;
+    width:416px;
+    height: 100px;
+    box-shadow: 0 4px 2px -2px gray;
 }
 
 
@@ -111,6 +102,66 @@ nav h2 {
     visibility: hidden;
 }
 
+nav img {
+    display:none;
+}
+
+/*menu nav attempt...*/
+
+.dropbtn {
+    position:fixed;
+    top:0%;
+    padding:25px;
+    border:none;
+    cursor:pointer;
+    width:75px;
+    height:100px;
+}
+
+.dropdowncontent .navigation {
+    padding-top:100px;
+    z-index:0;
+    position:absolute;
+    min-width:75px;
+    display:none;
+
+}
+
+.dropdowncontent a {
+    padding: 12px 16px;
+    display:block;
+    text-decoration:none;
+    color:#eb5428;
+    background-color:#f2f2f2;
+}
+
+.dropdown-content a:hover {
+    background-color: #eb5428;
+    color:#f2f2f2;
+}
+
+.dropdownmenu:hover .dropdowncontent .navigation {
+  display: block;
+}
+
+
+/*menu nav fin*/
+
+/*Header Icons Positioning*/
+nav ul li:first-of-type {
+    position:fixed;
+    background-color:#eb5428;
+    top:0;
+    right:40%;
+}
+nav ul li:last-of-type {
+    position:fixed;
+    top:0;
+    right:25%;
+}
+
+/*Header Icons Positioning*/
+
 header h1 {
     padding-left:100px;
     font-size: 40px;
@@ -119,19 +170,27 @@ header h1 {
 
 #search {
     position:absolute;
+    align-items:center;
+    display:flex;
+    margin-inline: auto;
     top: 145px;
-    left: 34%;
-    border: 2px solid #eb5428;
+    left:8%;
 }
 
 #search input {
     border-style: none;
-    padding: 10px;
-    width: 175px;
+    width: 300px;
+    height:40px;
+    border: 2px solid #eb5428;
+    justify-content:right;
+    margin:0;
 }
 
 #search button {
     border-style:none;
+    margin:0;
+    height:40px;
+    background-color:#eb5428;
 }
 
 menu {
@@ -163,15 +222,15 @@ main img:first-of-type {
 
 #details h2 {
     padding-left:40%;
-    margin:5px;
+    margin:10px;
     font-weight: bold;
 }
 
-#details ul {
-    margin:10px;
-}
-#details li {
-    margin: 5px;
+
+#details dl {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 10px;
 }
 
 
@@ -299,4 +358,62 @@ footer p {
     font-weight:bold;
 }
 
+}
+
+@media screen and (min-width:1200px) {
+
+header,main,footer,nav {
+    background-color: #f2f2f2;
+    margin:auto;
+    width:1280px;
+}
+
+nav {
+    background-color: #f2f2f2;
+    position:fixed;
+    top:0;
+    left:7.91%;
+    width:1280px;
+    height: 125px;
+    box-shadow: 0 4px 2px -2px gray;
+}
+
+nav .dropbtn {
+    display:none;
+}
+
+nav img {
+    width:50px;
+    height:50px;
+    padding-left:5px;
+}
+
+
+nav li {
+    margin-left:30px;
+    list-style:none;
+    padding:20px;
+}
+
+nav a {
+    text-decoration: none;
+    color:#eb5428;
+    font-weight:bold;
+}
+
+
+nav h2 {
+    visibility: hidden;
+}
+
+ul li a img{
+    display:block;
+    padding:5px;
+}
+
+nav ul {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+    
 }
