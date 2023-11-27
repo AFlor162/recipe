@@ -523,11 +523,12 @@ main img:first-of-type {
     display:block;
     background-color: #0d0d0d;
     color:#7abfbf;
-    padding:10px;
+    padding:20px;
 }
 
 #details h2 {
-    padding-left:40%;
+    padding-left:48%;
+    padding-bottom:20px;
     margin:10px;
     font-weight: bold;
     grid-row-start: 1;
@@ -537,6 +538,7 @@ main img:first-of-type {
 #details dl {
     display:grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    padding-left:10%;
 
 }
 
@@ -550,6 +552,10 @@ main img:first-of-type {
     grid-row-end: 2;
 }
 
+#combo {
+    display:flex;
+}
+
 #Ingredients h2 {
     padding-left:37%;
     margin:5px;
@@ -557,8 +563,8 @@ main img:first-of-type {
 }
 
 #Ingredients li {
-    margin: 5px;
     list-style: square;
+    padding:10px;
 }
 
 #Ingredients ul {
@@ -579,7 +585,7 @@ main img:first-of-type {
 }
 
 #directions li {
-    margin: 5px;
+    padding:10px;
 }
 
 #sides h2 {
